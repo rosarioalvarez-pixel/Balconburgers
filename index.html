@@ -20,8 +20,6 @@ body{
     color:white;
 }
 
-/* NAV */
-
 header{
     position:fixed;
     width:100%;
@@ -52,8 +50,6 @@ nav a{
 nav a:hover{
     color:#ffc400;
 }
-
-/* HERO */
 
 .hero{
     height:100vh;
@@ -93,8 +89,6 @@ nav a:hover{
     background:white;
 }
 
-/* SECCIONES */
-
 section{
     padding:100px 8%;
 }
@@ -105,8 +99,6 @@ section{
     margin-bottom:60px;
     color:#ffc400;
 }
-
-/* MENU */
 
 .menu-grid{
     display:grid;
@@ -150,8 +142,6 @@ section{
     font-weight:600;
 }
 
-/* FOOTER */
-
 footer{
     background:#000;
     text-align:center;
@@ -165,33 +155,38 @@ footer a{
     font-weight:600;
 }
 
-/* WHATSAPP */
+/* WHATSAPP REAL */
 
 .whatsapp{
     position:fixed;
     bottom:20px;
     right:20px;
-    background:#25D366;
-    color:white;
     width:60px;
     height:60px;
+    background:#25D366;
     border-radius:50%;
     display:flex;
-    justify-content:center;
     align-items:center;
-    font-size:28px;
-    text-decoration:none;
+    justify-content:center;
     box-shadow:0 5px 15px rgba(0,0,0,.4);
     z-index:999;
+    transition:.3s;
 }
 
-/* RESPONSIVE */
+.whatsapp:hover{
+    transform:scale(1.1);
+}
+
+.whatsapp svg{
+    width:30px;
+    height:30px;
+    fill:white;
+}
 
 @media(max-width:768px){
     .hero h1{
         font-size:35px;
     }
-
     nav{
         display:none;
     }
@@ -214,7 +209,8 @@ footer a{
     <div>
         <h1>Sabor desde el primer bocado</h1>
         <p>Villa de Mayo • Delivery 19:30 a 00:00</p>
-        <a href="https://wa.me/549XXXXXXXXX" class="btn">Pedir Ahora</a>
+        <p style="margin-top:10px;font-weight:600;">+54 9 11 3646-9662</p>
+        <a href="https://wa.me/5491136469662" class="btn">Pedir por WhatsApp</a>
     </div>
 </section>
 
@@ -222,9 +218,8 @@ footer a{
     <h2 class="titulo">Nuestro Menú</h2>
     <div class="menu-grid">
 
-        <!-- EDITÁ LAS IMÁGENES DESDE AQUÍ -->
         <div class="card">
-            <img src="hamburguesa1.jpg" alt="Hamburguesa">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Hamburguesa clásica">
             <div class="card-content">
                 <h3>Clásica</h3>
                 <p>Carne 100% vacuna, cheddar y pan artesanal.</p>
@@ -233,7 +228,7 @@ footer a{
         </div>
 
         <div class="card">
-            <img src="hamburguesa2.jpg" alt="Hamburguesa">
+            <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433a" alt="Hamburguesa bacon">
             <div class="card-content">
                 <h3>Bacon Cheese</h3>
                 <p>Doble carne, cheddar y panceta crocante.</p>
@@ -242,7 +237,7 @@ footer a{
         </div>
 
         <div class="card">
-            <img src="hamburguesa3.jpg" alt="Hamburguesa">
+            <img src="https://images.unsplash.com/photo-1606755962773-d324e2d53b7b" alt="Hamburguesa triple">
             <div class="card-content">
                 <h3>Balcón Especial</h3>
                 <p>Triple carne, cheddar, cebolla crispy y salsa especial.</p>
@@ -256,7 +251,8 @@ footer a{
 <section id="contacto">
     <h2 class="titulo">Hacé tu pedido</h2>
     <div style="text-align:center;">
-        <a href="https://wa.me/549XXXXXXXXX" class="btn">Enviar WhatsApp</a>
+        <p style="margin-bottom:20px;font-weight:600;">+54 9 11 3646-9662</p>
+        <a href="https://wa.me/5491136469662" class="btn">Enviar WhatsApp</a>
     </div>
 </section>
 
@@ -267,7 +263,11 @@ footer a{
     </a>
 </footer>
 
-<a href="https://wa.me/549XXXXXXXXX" class="whatsapp">💬</a>
+<a href="https://wa.me/5491136469662" class="whatsapp" target="_blank">
+    <svg viewBox="0 0 32 32">
+        <path d="M19.11 17.2c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.5.71.3 1.26.48 1.69.61.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+    </svg>
+</a>
 
 </body>
 </html>
