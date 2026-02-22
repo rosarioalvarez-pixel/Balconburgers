@@ -69,25 +69,32 @@ padding:22px 12px;border-top:1px solid #222;margin-top:40px}
 
 footer a{color:#ffc400;text-decoration:none;font-weight:600}
 
-/* Botón WhatsApp limpio */
-.whatsapp{
+/* BOTÓN WHATSAPP ORIGINAL */
+.whatsapp-float{
 position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
 width:60px;
 height:60px;
+bottom:20px;
+right:20px;
+background-color:#25D366;
 border-radius:50%;
+text-align:center;
+box-shadow:2px 2px 10px rgba(0,0,0,.4);
+z-index:1000;
 display:flex;
 align-items:center;
 justify-content:center;
-box-shadow:0 8px 24px rgba(0,0,0,.4);
-z-index:1200;
-text-decoration:none;
-transition:.3s}
+transition:.3s;
+}
 
-.whatsapp:hover{transform:scale(1.1)}
-.whatsapp svg{width:30px;height:30px;fill:#fff}
+.whatsapp-float:hover{
+transform:scale(1.1);
+}
+
+.whatsapp-icon{
+width:32px;
+height:32px;
+}
 
 @media(max-width:720px){
 .hero h1{font-size:32px}
@@ -166,12 +173,10 @@ Enviar WhatsApp
 Diseñado por <a href="https://r-a-studio-nup2.onrender.com/" target="_blank">R.A Studio</a>
 </footer>
 
-<a class="whatsapp" 
-href="https://wa.me/5491136469662?text=Hola%20Balc%C3%B3n%20Burger%20%F0%9F%8D%94%20quiero%20hacer%20un%20pedido"
-target="_blank">
-<svg viewBox="0 0 32 32">
-<path d="M19.11 17.2c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.5.71.3 1.26.48 1.69.61.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
-</svg>
+<!-- BOTÓN ORIGINAL -->
+<a href="https://wa.me/5491136469662?text=Hola%20Balc%C3%B3n%20Burger%20%F0%9F%8D%94%20quiero%20hacer%20un%20pedido" 
+class="whatsapp-float" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="whatsapp-icon" alt="WhatsApp">
 </a>
 
 </body>
